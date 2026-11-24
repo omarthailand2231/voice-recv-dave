@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "voice-recv-dave"
+version = "0.1.0"
+description = "Drop-in DAVE (end-to-end encrypted voice) receive support and stability fixes for discord-ext-voice-recv"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+dependencies = [
+    "discord.py[voice]>=2.7",
+    "discord-ext-voice-recv>=0.5.2a179",
+    "davey>=0.2.0",
+]
+keywords = ["discord", "discord.py", "voice", "dave", "e2ee", "voice_recv", "recording"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio :: Capture/Recording",
+]
+
+[project.urls]
+Source = "https://github.com/omarthailand2231/voice-recv-dave"
+
+[tool.setuptools]
+packages = ["voice_recv_dave"]
